@@ -16,7 +16,7 @@
             <div id="form">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as consfigurações do seu ambiente.</p>
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="on">
                     <div id="field">
                         <span class="material-symbols-outlined">account_circle</span>
                         <input type="email" name="email" id="email" placeholder="seu Email" autocomplete="email" required maxlength="30">
@@ -24,11 +24,11 @@
                     </div>
                     <div id="field">
                         <span class="material-symbols-outlined">lock</span>
-                        <input type="password" name="email" id="email" placeholder="sua Senha" autocomplete="current-password">
+                        <input type="password" name="email" id="email" placeholder="sua Senha" autocomplete="current-password" required minlength="8" maxlength="20">
                         <label for="email">Senha</label>
                     </div>
                     <input type="submit" value="Entrar">
-                    <a href="forgot.html">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
+                    <a href="forgot.html" class="botton">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
                 </form>
             </div>
         </section>
