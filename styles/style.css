@@ -39,7 +39,7 @@ section#login {
     position: absolute;
     background-color: white;
     width: 256px;
-    height: 500px;
+    height: 520px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -71,6 +71,10 @@ form div.field {
     margin: 5px 0px
 }
 
+div.field label {
+    display: none;
+}
+
 main h1 {
     text-align: center;
     margin-bottom: 10px;
@@ -80,8 +84,11 @@ main p {
     font-size: .8em;
 }
 
-form input[type=email], form input[type=password] {
-    width: 65%;
+div.field span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
 }
 
 form input[type=submit] {
@@ -117,6 +124,18 @@ form a.button {
 
 form a.button span {
     font-size: 1em;
+    padding: 2px;
+}
+
+div.field input {
+    background-color: lightcyan;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    transform: translateY(-11px);
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 form a.button:hover {
