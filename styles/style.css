@@ -138,6 +138,10 @@ div.field input {
     padding: 5px;
 }
 
+div.field input:focus-within {
+    background-color: white
+}
+
 form a.button:hover {
     background-color: white;
     color: black;
