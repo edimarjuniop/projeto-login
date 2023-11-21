@@ -12,6 +12,7 @@ Lilás: #5f2c82
     --back-color: #5f2c82;
     --default-color: #49a09d;
     --shadow-color: #00000080;
+    --select-color: #357270;
 }
 
 * {
@@ -83,4 +84,8 @@ form input[type=submit] {
     color: white;
     border: none;
     border-radius: 5px;
+}
+
+form input[type=submit]:hover {
+    background-color: var(--select-color);
 }
